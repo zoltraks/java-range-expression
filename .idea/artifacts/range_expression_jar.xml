@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="range-expression:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/range_expression</output-path>
+    <output-path>$PROJECT_DIR$/out/artifacts/range-expression</output-path>
     <root id="archive" name="range-expression.jar">
       <element id="module-output" name="range-expression" />
     </root>
