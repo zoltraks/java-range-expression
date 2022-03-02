@@ -1,9 +1,33 @@
 Range expression support for Java
 =================================
 
+This is Java library project which contains classes for matching numeric values in ranges specified by range expression text.
+
+Range expression is simply the list of numbers or ranges specified as pairs of numbers separated by colon between square and round brackets.
+
 ```
-(2:5) [-1:1.5] 7 -1
+1 2 3 4 5 6
 ```
+
+Above is just a list of possible numbers.
+
+```
+(2:5) [-1:1.5] 7 -3
+```
+
+That one should be read as:
+
+ - "higher than 2" and "less than 5", or...
+ - "higher or equal -1" and "less or equal 1.5", or...
+ - "equals 7", or...
+ - "equals -3".
+
+This library provides checking functionality if number is covered by any range specified this way.
+
+Some ranges might need normalization and this is also supported.
+
+For example ``(4:1)`` would mean "higher than 4" and "less than 1" which is impossible.
+After normalization it would be changed to ``(1:4)``.
 
 ## Download
 
