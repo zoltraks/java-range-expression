@@ -29,6 +29,18 @@ Some ranges might need normalization and this is also supported.
 For example ``(4:1)`` would mean "higher than 4" and "less than 1" which is impossible.
 After normalization it would be changed to ``(1:4)``.
 
+More complex example of range expression is below.
+
+```
+( -2.7182818:+3.) [+.7182818:-3.1415927]
+[:.5] [ : .4] [-1:-3] (+4:+9)
+[0:0]  [ 1 : 1 ]  (+0:-0)  [0:0.] (+.0:-0.) ( +.0 : -0. )
+[ : ] (:) (  :)
+[1.:2.] (.7:.3) [-1.:-2.] (-.7:-.3)
+[ +0. : -.5 ]
+12 +3.1415927 -2.7182818
+```
+
 ## Download
 
 [Download JAR library →](out/artifacts/range-expression/range-expression.jar)
