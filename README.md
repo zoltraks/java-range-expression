@@ -50,7 +50,7 @@ More complex example of range expression is below.
 ```java
 public static void main(String[] args) {
     String input = "(-2.3:-0.5) [ -.7 : +2.5 ] 42.23";
-    Range.Array ranges = Range.match(input);
+    Range.Array ranges = Range.create(input);
     for (Range range : ranges) {
         System.out.println(range.toString());
     }
