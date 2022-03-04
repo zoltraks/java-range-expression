@@ -23,7 +23,7 @@ public class Main {
                 if (!Range.isValid(line)) {
                     System.out.println("Invalid range expression");
                 }
-                Range.Array ranges = Range.match(line);
+                Range.Array ranges = Range.create(line);
                 if (ranges.isEmpty()) {
                     System.out.println("Range set is empty");
                     continue;

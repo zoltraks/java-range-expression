@@ -160,6 +160,13 @@ public class Range {
             Pattern pattern = Pattern.compile(this.validateExpression, Pattern.COMMENTS | Pattern.MULTILINE);
             return pattern.matcher(input).find();
         }
+
+        public Array normalize() {
+            for (Range range : this) {
+                range.normalize();
+            }
+            return this;
+        }
     }
 
     //endregion
@@ -372,7 +379,7 @@ public class Range {
      * @param input Text containing set of ranges and values like "(2:5) [-1:4.5] 7 -1"
      * @return New array of range objects
      */
-    public static Array match(String input) {
+    public static Array create(String input) {
         return new Array().match(input);
     }
 
