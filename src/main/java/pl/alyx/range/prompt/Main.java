@@ -26,6 +26,7 @@ public class Main {
                 Range.Array ranges = Range.create(line);
                 if (ranges.isEmpty()) {
                     System.out.println("Range set is empty");
+                    System.out.println();
                     continue;
                 }
 
