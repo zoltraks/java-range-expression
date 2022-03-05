@@ -48,6 +48,7 @@ public class Main {
                     System.out.print("Enter value to check > ");
                     line = scanner.nextLine();
                     if (line.length() == 0) {
+                        System.out.println();
                         break;
                     }
                     try {

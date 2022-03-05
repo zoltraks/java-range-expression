@@ -29,8 +29,8 @@ public class Range {
 
         private String validateExpression = "" +
                 "^\n" +
-                "(?:\n" +
                 "\\s*\n" +
+                "(?:\n" +
                 "(?:\n" +
                 "  [\\(\\[]\n" +
                 "    \\s*\n" +
@@ -46,6 +46,7 @@ public class Range {
                 "\n" +
                 ")\n" +
                 ")+\n" +
+                "\\s*\n" +
                 "$\n";
 
         private Array setExtractExpression(String extractExpression) {
