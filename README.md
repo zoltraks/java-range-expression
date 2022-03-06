@@ -1,3 +1,5 @@
+[![Maven Central](https://img.shields.io/maven-central/v/pl.alyx.range/range-expression.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22pl.alyx.range%22%20AND%20a:%22range-expression%22)
+
 Range expression support for Java
 =================================
 
